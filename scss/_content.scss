@@ -1,0 +1,68 @@
+@use  'colors' as *;
+
+.content{
+    grid-area: content;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    #contentContainer{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 1em;
+    }
+}
+
+.contentTitle{
+    font-size: 1.5vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: $darkerColor;
+}
+
+
+
+.contentOne{
+    display: flex;
+}
+
+.left-border{
+    background: $darkColor;
+    width: 3%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.contentItem{
+    background: $lightColor;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.contentHead{
+    font-family: 'Courier New', Courier, monospace;
+    color: $darkerColor;
+    font-size: 1.75rem;
+}
+
+.contentBody{
+    font-family: 'Courier New', Courier, monospace;
+    color: $darkColor;
+    font-size: clamp(15px,1.2vw,30px);
+    height: max(100px, 80%);
+}
+
+.contentIcon{
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+}
+
+.contentIcons{
+    width: 4vw;
+    height: 3vh;
+}

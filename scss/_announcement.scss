@@ -1,0 +1,27 @@
+@use  'colors' as *;
+
+.announcement{
+    grid-area: announcement;
+    margin: 1em 1em 1em 0;
+}
+
+.announcementHeader{
+    font-size: 1.5vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: $darkerColor;
+}
+
+.announcementList{
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    border-radius: 15px;
+}
+
+.announcementItem{
+    flex: 1;
+    background-color: $lightColor;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}

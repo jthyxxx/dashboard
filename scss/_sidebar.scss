@@ -1,0 +1,77 @@
+@use  'colors' as *;
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: $darkerColor;
+}
+
+
+ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(50px, 1fr));
+    li{
+        font-size: 3vh;
+        color: $lighterColor;
+    }
+}
+
+.logo{
+    height: 6vh;
+    width: 6vw;
+}
+
+.item-logo{
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6vh;
+}
+
+
+.logo-icon{
+    fill: $lighterColor;
+}
+
+.top-icon{
+    fill: $lighterColor;
+}
+
+.icon{
+    height: 4vh;
+    width: 4vw;
+    padding-left: .5em;
+}
+
+.top-items{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-left: .5vw;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.item-label{
+    font-size: 1.5vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: $lighterColor;
+}
+
+.dashboardtext{
+    font-size: 2vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: $lighterColor;
+}
+
+.bottom-items{
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-left: .5vw;
+}

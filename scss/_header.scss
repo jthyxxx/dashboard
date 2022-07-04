@@ -1,0 +1,80 @@
+@use  'colors' as *;
+
+.header{
+    grid-area: header;
+    background-color: $lightColor;
+    display: flex;
+    flex-direction: column;
+}
+
+.search{
+    display: flex;
+    margin: 1em;
+    align-items: center;
+    gap: 1em;
+}
+
+.searchIcon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: $darkColor;
+}
+
+[type="text"]{
+    width: 800px;
+    height: 30px;
+    border-radius: 12px;
+}
+
+.notifIcon{
+    margin-left: 14em;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: $darkColor;
+}
+
+.profilePic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: $darkerColor;
+}
+
+.profName{
+    font-size: 1.5vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: $darkerColor;
+}
+
+.searchBottom{
+    display: flex;
+    margin-left: 2em;
+    gap: 1em;
+    align-items: center;
+}
+
+.bigProfile{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: $darkerColor
+}
+
+.greetings{
+    font-size: 1vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: $darkerColor;
+}
+
+button{
+    height: 60px;
+    width: 150px;
+    border-radius: 15px;
+    background: $lighterColor;
+}
+
+.buttonOne{
+    margin-left: 30vw;
+}
